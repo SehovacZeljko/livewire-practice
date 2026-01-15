@@ -10,6 +10,13 @@
     <button class="button" wire:click='increment'>+1</button>
     <button class="button" wire:click='decrement'>-1</button>
   </div> --}}
+<form wire:submit="$refresh" action="" class="">
+<span class="mr-2">Your Name:</span>
+<input type="text" wire:model.live.debounce.500ms="name" class="">
+
+
+</form>
+ 
 
   <ul class="list">
     @foreach($books as $book)
