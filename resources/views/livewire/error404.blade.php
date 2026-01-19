@@ -8,7 +8,7 @@
                 <ol class="flex justify-center uppercase space-x-2 text-sm tracking-[0.2em]">
                     <li><a class="text-white hover:text-primary transition" href="/" wire:navigate>Home</a></li>
                     <li class="text-gray-500">/</li>
-                    <li class="text-primary active">404</li>
+                    <li class="text-primary">404</li>
                 </ol>
             </nav>
         </div>

@@ -25,30 +25,6 @@
         </div>
     </div>
 
-    <div class="w-full bg-secondary">
-    </div>
-
-    <div class="w-full py-12 md:py-20">
-    </div>
-
-    {{-- Testimonial Carousel Section --}}
-    <div class="w-full py-12 md:py-20 bg-secondary">
-        <div class="max-w-7xl mx-auto px-4 py-12 md:py-20">
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.3s">
-                <div class="text-center"
-                    data-dot="<img class='img-fluid' src='{{ asset('img/testimonial-1.jpg') }}' alt=''>">
-                    <p class="text-lg md:text-xl text-gray-300">Client feedback text here...</p>
-                    <h5 class="uppercase font-bold text-white tracking-wider">Joanne Irwin</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {{-- About Section --}}
-    <x-about-section subtitle="History" title="About Our Agency" bgClass="bg-secondary">
-        <p>This is the paragraph text for the Home page. It replaces the $slot variable.</p>
-    </x-about-section>
-
     {{-- Service Items --}}
     <x-service-item title="Fashion Shows" image="img/service-1.jpg" align="left">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat fermentum urna...
@@ -65,6 +41,34 @@
     <x-service-item title="Professional Modeling" image="img/service-4.jpg" align="right">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat fermentum urna...
     </x-service-item>
+{{-- Testimonial Section --}}
+<div class="w-full py-12 md:py-20 bg-secondary">
+    <div class="max-w-7xl mx-auto px-4 py-12 md:py-20">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.3s">
+            <div class="max-w-2xl mx-auto bg-[#111111] p-8 lg:p-12 border border-gray-800 transition-all duration-300 hover:border-primary">
+                <i class="fa fa-quote-left text-3xl text-primary mb-6 block"></i>
+                <p class="text-lg md:text-xl text-gray-300 italic leading-relaxed mb-6">
+                    Client feedback text here...
+                </p>
+                <div class="flex items-center justify-center border-t border-gray-800 pt-6">
+                    <img class="w-12 h-12 rounded-full object-cover border-2 border-primary" 
+                         src="{{ asset('img/testimonial-1.jpg') }}" 
+                         alt="Joanne Irwin">
+                    <div class="ml-4">
+                        <h5 class="uppercase font-bold text-white tracking-widest text-sm">Joanne Irwin</h5>
+                        <small class="text-primary uppercase tracking-tighter text-xs font-semibold">Client</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    {{-- About Section --}}
+    <x-about-section subtitle="History" title="About Our Agency" bgClass="bg-secondary">
+        <p>This is the paragraph text for the Home page. It replaces the $slot variable.</p>
+    </x-about-section>
+
 
     {{-- Casting Banner --}}
     <livewire:casting-banner />
