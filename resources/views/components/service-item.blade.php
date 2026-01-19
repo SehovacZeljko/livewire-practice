@@ -36,8 +36,8 @@
                     {{ $slot }}
                 </div>
                 
-                <a href="#!" class="btn btn-outline-primary px-10 py-3 border-2 border-primary text-primary hover:bg-primary hover:text-white inline-block">
-                    Read More <i class="fa fa-arrow-right ms-2"></i>
+                <a href="#!" class="inline-block px-10 py-3 border-2 border-primary text-primary font-bold uppercase tracking-wider transition-all duration-300 hover:bg-primary hover:text-dark rounded">
+                    Read More <i class="fa fa-arrow-right ml-2"></i>
                 </a>
             </div>
         </div>
