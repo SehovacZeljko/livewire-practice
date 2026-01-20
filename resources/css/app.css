@@ -2,38 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  /* Original Poseify Palette */
-  --primary: #D4AF37;    /* Gold */
-  --dark: #111111;       /* Deep Black */
-  --secondary: #1a1a1a;  /* Dark Gray */
-  --light: #F2F2F2;      /* Off-white */
-  --body-text: #666666;  /* Muted Gray for paragraphs */
-}
+
 
 @layer base {
   body {
-    background-color: #111111; /* Services/About sections are usually white */
-    color: var(--body-text);
-    font-family: 'Open Sans', sans-serif; /* Standard for this template */
+    @apply bg-[#111111] text-body-text; /* Use Tailwind classes */
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply uppercase font-bold text-[#111111];
-    font-family: 'Oswald', sans-serif;
-  }
-
-  /* Resetting the default link styles from your previous CSS */
-  a {
-    @apply no-underline transition-all duration-300;
+    @apply uppercase font-bold text-[#111111] font-brand;
   }
 }
 
-/* Helper class for the Dark Sections (Models/Testimonials) */
-.bg-secondary-section {
-  background-color: var(--secondary) !important;
+@layer components {
+  /* Add any custom components here */
 }
 
-.bg-dark-section {
-  background-color: var(--dark) !important;
+@layer utilities {
+  /* Add any custom utilities here */
 }

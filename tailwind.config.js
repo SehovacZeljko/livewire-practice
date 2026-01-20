@@ -12,7 +12,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                sans: ["Work Sans", ...defaultTheme.fontFamily.sans],
+                brand: ["Josefin Sans", "sans-serif"],
             },
             colors: {
                 // Original Poseify Gold
@@ -21,6 +22,7 @@ export default {
                 dark: "#111111",
                 // Original Poseify Secondary (Light Gray-Black)
                 secondary: "#1a1a1a",
+                'body-text':'#FFFFFF'
             },
         },
     },
